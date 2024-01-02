@@ -1,0 +1,18 @@
+﻿<Window x:Class="MyWPFApp.DataGrid"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyWPFApp"
+        mc:Ignorable="d"
+        Title="DataGrid" Height="127" Width="356">
+    <Grid>
+        <DataGrid Name="dgCarList" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Header="Car Name" Binding="{Binding CarName}" />
+                <DataGridTextColumn Width="*" Header="Color" Binding="{Binding Color}"/>
+                <DataGridTextColumn Width="*" Header="Brand" Binding="{Binding Brand}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
