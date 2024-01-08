@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\fpt\\kI7\\PRN221\\project\\MyWPFApp\\ManageCategoriesApp\\ManageCategoriesApp.csproj": {}
+    "D:\\fpt\\kI7\\PRN221\\PRN111\\MyWPFApp\\ManageCategoriesApp\\ManageCategoriesApp.csproj": {}
   },
   "projects": {
-    "D:\\fpt\\kI7\\PRN221\\project\\MyWPFApp\\ManageCategoriesApp\\ManageCategoriesApp.csproj": {
+    "D:\\fpt\\kI7\\PRN221\\PRN111\\MyWPFApp\\ManageCategoriesApp\\ManageCategoriesApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\fpt\\kI7\\PRN221\\project\\MyWPFApp\\ManageCategoriesApp\\ManageCategoriesApp.csproj",
+        "projectUniqueName": "D:\\fpt\\kI7\\PRN221\\PRN111\\MyWPFApp\\ManageCategoriesApp\\ManageCategoriesApp.csproj",
         "projectName": "ManageCategoriesApp",
-        "projectPath": "D:\\fpt\\kI7\\PRN221\\project\\MyWPFApp\\ManageCategoriesApp\\ManageCategoriesApp.csproj",
+        "projectPath": "D:\\fpt\\kI7\\PRN221\\PRN111\\MyWPFApp\\ManageCategoriesApp\\ManageCategoriesApp.csproj",
         "packagesPath": "C:\\Users\\van12\\.nuget\\packages\\",
-        "outputPath": "D:\\fpt\\kI7\\PRN221\\project\\MyWPFApp\\ManageCategoriesApp\\obj\\",
+        "outputPath": "D:\\fpt\\kI7\\PRN221\\PRN111\\MyWPFApp\\ManageCategoriesApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\van12\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"

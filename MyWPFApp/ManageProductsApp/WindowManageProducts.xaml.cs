@@ -12,7 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
--
+using System.Text.Json;
+
     namespace ManageProductsApp
 {
     /// <summary>
@@ -20,17 +21,17 @@ using System.IO;
     /// </summary>
     public partial class WindowManageProducts : Window
     {
-        MannageProducts mannageProducts= new MannageProducts();
+        MannageProducts mannageProducts = new MannageProducts();
         public record Product
         {
-            public int ProductID { get; set;}
-            public string ProductName { get; set;}
+            public int ProductID { get; set; }
+            public string ProductName { get; set; }
         }
         public class MannageProducts
         {
-            string filename = "ProductList.json";
+            string filename =  "ProductList.json";
             List<Product> products = new List<Product>();
-            public List<Product>GetProducts()
+            public List<Product> GetProducts()
             {
                 GetDataFromFile();
                 return products;
@@ -44,7 +45,8 @@ using System.IO;
                         string jsonData = File.ReadAllText(filename);
                         products = JsonSerializer.Deserialize<List<Product>>(jsonData);
                     }
-                }catch(Exception ex)
+                }
+                catch (Exception ex)
                 {
                     throw new Exception(ex.Message);
                 }
@@ -54,12 +56,14 @@ using System.IO;
                 try
                 {
                     string jsonData = JsonSerializer.Serialize(products
-                        , new JsonSerializerOptions{
-                                WriteIndented = true,
-                            }
+                        , new JsonSerializerOptions
+                        {
+                            WriteIndented = true,
+                        }
                     );
-                    File.WriteAllText(filename, jsonData );
-                }catch(Exception ex)
+                    File.WriteAllText(filename, jsonData);
+                }
+                catch (Exception ex)
                 {
                     throw new Exception(ex.Message);
                 }
@@ -73,11 +77,12 @@ using System.IO;
                     {
                         throw new Exception("Product already exist");
                     }
-                    products.Add(p);
+                    products.Add(product);
                     StoreToFile();
-                }catch(Exception ex )
+                }
+                catch (Exception ex)
                 {
-                    throw new Exception (ex.Message);
+                    MessageBox.Show(ex.Message);
                 }
             }
             public void Update(Product product)
@@ -94,25 +99,56 @@ using System.IO;
                 }
                 catch (Exception ex)
                 {
-                    throw new Exception(ex.Message);
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            public void Delete(Product product)
+            {
+                try
+                {
+                    Product p = products.SingleOrDefault(p => p.ProductID == product.ProductID);
+                    if (p == null)
+                    {
+                        throw new Exception("Product is not exist");
+                    }
+                    products.Remove(p);
+                    StoreToFile();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
                 }
             }
         }
-
+        private Product GetProduct()
+        {
+            int productID = 0;
+            Int32.TryParse(txtProductID.Text, out productID);
+            return new Product
+            {
+                ProductID = productID,
+                ProductName = txtProductName.Text,
+            };
+        }
         private void btnInsert_Click(object sender, RoutedEventArgs e)
         {
-            mannageProducts.insert(Product{
-            });
+            mannageProducts.insert(GetProduct());
+            List<Product> products = mannageProducts.GetProducts();
+            lvProducts.ItemsSource = products;
         }
 
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
-
+            mannageProducts.Update(GetProduct());
+            List<Product> products = mannageProducts.GetProducts();
+            lvProducts.ItemsSource = products;
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-
+            mannageProducts.Delete(GetProduct());
+            List<Product> products = mannageProducts.GetProducts();
+            lvProducts.ItemsSource = products;
         }
 
         public WindowManageProducts()

@@ -125,7 +125,7 @@ namespace ManageProductsApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ManageProductsApp;V1.0.0.0;component/windowmanageproducts.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ManageProductsApp;component/windowmanageproducts.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\WindowManageProducts.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

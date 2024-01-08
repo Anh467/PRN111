@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\fpt\\kI7\\PRN221\\project\\MyWPFApp\\MyWPFApp\\MyWPFApp.csproj": {}
+    "D:\\fpt\\kI7\\PRN221\\PRN111\\MyWPFApp\\MyWPFApp\\MyWPFApp.csproj": {}
   },
   "projects": {
-    "D:\\fpt\\kI7\\PRN221\\project\\MyWPFApp\\MyWPFApp\\MyWPFApp.csproj": {
+    "D:\\fpt\\kI7\\PRN221\\PRN111\\MyWPFApp\\MyWPFApp\\MyWPFApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\fpt\\kI7\\PRN221\\project\\MyWPFApp\\MyWPFApp\\MyWPFApp.csproj",
+        "projectUniqueName": "D:\\fpt\\kI7\\PRN221\\PRN111\\MyWPFApp\\MyWPFApp\\MyWPFApp.csproj",
         "projectName": "MyWPFApp",
-        "projectPath": "D:\\fpt\\kI7\\PRN221\\project\\MyWPFApp\\MyWPFApp\\MyWPFApp.csproj",
+        "projectPath": "D:\\fpt\\kI7\\PRN221\\PRN111\\MyWPFApp\\MyWPFApp\\MyWPFApp.csproj",
         "packagesPath": "C:\\Users\\van12\\.nuget\\packages\\",
-        "outputPath": "D:\\fpt\\kI7\\PRN221\\project\\MyWPFApp\\MyWPFApp\\obj\\",
+        "outputPath": "D:\\fpt\\kI7\\PRN221\\PRN111\\MyWPFApp\\MyWPFApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\van12\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"

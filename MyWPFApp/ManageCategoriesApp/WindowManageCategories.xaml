@@ -10,9 +10,14 @@
         <StackPanel Height="187" VerticalAlignment="Top"  Background="#88b2db">
             <Label Foreground="Red" FontSize="30" FontWeight="Bold" >Category Information</Label>
             <Label>Category ID</Label>
-            <TextBox Width="280" HorizontalAlignment="Left"></TextBox>
+            <TextBox Width="280" HorizontalAlignment="Left" Name="txtCategoryID" 
+                     Text="{Binding Path=CategoryID, Mode=OneWay}"
+                     DataContext="{Binding ElementName=dgCateList, Path=SelectedItem}"></TextBox>
             <Label>Category Name</Label>
-            <TextBox Width="280" HorizontalAlignment="Left"></TextBox>
+            <TextBox Width="280" HorizontalAlignment="Left" Name="txtCategoryName"
+                     Text="{Binding Path=CategoryName, Mode=OneWay}"
+                    DataContext="{Binding ElementName=dgCateList, Path=SelectedItem}"
+                     ></TextBox>
             <StackPanel Orientation="Horizontal"  HorizontalAlignment="Left">
                 <Button x:Name="btnInsert" Margin="10" Width="80" Content="Insert" 
                         Click="btnInsert_Click" />
@@ -25,9 +30,8 @@
         <Grid>
             <DataGrid Name="dgCateList" AutoGenerateColumns="False" Margin="0,185,0,0">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Width="*" Header="Category ID" Binding="{Binding CarName}" />
-                    <DataGridTextColumn Width="*" Header="Category Name" Binding="{Binding Color}"/>
-                    <DataGridTextColumn Width="*" Header="Brand" Binding="{Binding Brand}"/>
+                    <DataGridTextColumn Width="*" Header="Category ID" Binding="{Binding CategoryID}" />
+                    <DataGridTextColumn Width="*" Header="Category Name" Binding="{Binding CategoryName}"/>
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>

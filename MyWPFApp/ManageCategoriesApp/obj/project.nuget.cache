@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9mc1dkPEkeidUBfmQw38zhJSOZ6F2O4fBSJWcY9cT2pNZTsfNW1LBxnEjXUZlG436/jLKEMc72q09GoorGL8TQ==",
+  "dgSpecHash": "6RSd6EG9StU+dckzoab9r+bLnJo6GcThq3Hma6qP9vTGhrytS0Tcmxgth6/QP9gUR+n61YE4XvxX/FRBg8wzQA==",
   "success": true,
-  "projectFilePath": "D:\\fpt\\kI7\\PRN221\\project\\MyWPFApp\\ManageCategoriesApp\\ManageCategoriesApp.csproj",
+  "projectFilePath": "D:\\fpt\\kI7\\PRN221\\PRN111\\MyWPFApp\\ManageCategoriesApp\\ManageCategoriesApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\van12\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\van12\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

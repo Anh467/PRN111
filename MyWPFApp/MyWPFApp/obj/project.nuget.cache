@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ax+fsqd9MbpTvr3OO0ZVx1uNcBcLTo12ud6nUHo/lGee++I/jjtBVvNtY+kMEMiX2/38K2dKe2WlajFiDCI8Iw==",
+  "dgSpecHash": "xIcB4M5z4xml8XYnr0KLUr42Vx2jw1RK7dEvjkiPjKsboJkuVQxG15NJSmjklv8o9KItJ0ddsQ5oZHNo8c5GyQ==",
   "success": true,
-  "projectFilePath": "D:\\fpt\\kI7\\PRN221\\project\\MyWPFApp\\MyWPFApp\\MyWPFApp.csproj",
+  "projectFilePath": "D:\\fpt\\kI7\\PRN221\\PRN111\\MyWPFApp\\MyWPFApp\\MyWPFApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\van12\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\van12\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
